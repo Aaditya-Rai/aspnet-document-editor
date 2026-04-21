@@ -13,7 +13,7 @@
             <h2 style="text-align:center; margin-bottom:20px;">Login</h2>
 
             <asp:Label runat="server" Text="Username" Font-Bold="true"></asp:Label>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+             
             <br />
             <asp:TextBox ID="txtUsername" runat="server" Width="100%" Height="32px" 
                 style="margin-top:5px; padding:5px;"></asp:TextBox>
