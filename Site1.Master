@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="sem4_Project.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>CloudDocs Editor</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:Label ID="lblUser" runat="server" style="float:right; margin-right:20px;"></asp:Label>
+</head>
+<body style="margin:0; font-family:Arial; background-color:#f5f5f5;">
+    
+    <form id="form1" runat="server">
+
+        
+        <div style="background-color:#2563EB; color:white; padding:15px; font-size:22px; font-weight:bold;">
+            📝 CloudDocs  
+        </div>
+
+         
+        <div style="background-color:white; padding:10px; border-bottom:1px solid #ccc;">
+            <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Default.aspx"
+                style="margin-right:20px; font-weight:bold; text-decoration:none; color:black;">
+                Home
+            </asp:HyperLink>
+
+            <asp:HyperLink ID="lnkNewDoc" runat="server" NavigateUrl="~/NewDocument.aspx"
+                style="margin-right:20px; font-weight:bold; text-decoration:none; color:black;">
+                New Document
+            </asp:HyperLink>
+
+            <asp:HyperLink ID="lnkDocs" runat="server" NavigateUrl="~/DocumentList.aspx"
+                style="font-weight:bold; text-decoration:none; color:black;">
+                All Documents
+            </asp:HyperLink>
+            <asp:Button 
+    ID="btnLogout" 
+    runat="server" 
+    Text="Logout" 
+    style="float:right; margin-right:10px;"
+    OnClick="btnLogout_Click" />
+        </div>
+
+        
+        <div style="padding:20px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+       
+        <div style="background-color:#eeeeee; padding:10px; text-align:center; font-size:14px;">
+            © CloudDocs Project
+        </div>
+
+    </form>
+</body>
+</html>
